@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>ProfileBuilder</title>
+  </head>
+  <body>
+    <div id="menu" class="menu">
+      <ul>
+        <li>
+          <a class="active" href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#blog">Blog</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main">
+      <button id="scrollToTopBtn">
+        <a href="#home">
+          <i class="material-icons">arrow_upward</i>
+        </a>
+      </button>
+      <section id="home" class="home-section">
+        <div class="home-content">
+            <p>Hi, <span>I am</span> Shinu Mathew</p>
+            <div class="dynamic-text">
+                <p><span class="animate"></span></p>
+            </div>
+        </div>
+      </section>
+      <section id="about" class="section">ABOUT</section>
+      <section id="services" class="section">SERVICES</section>
+      <section id="blog" class="section">BLOG</section>
+      <section id="contact" class="section">CONTACT</section>
+    </div>
+    <script src="typed.js"></script>
+    <script>
+        var typed = new Typed('.animate', {
+            strings: [
+                "Backend development",
+                "Mobile development",
+                "UI development",
+                "Test Automation",
+                "Devops"
+            ],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        })
+    </script>
+  </body>
+</html>
