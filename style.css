@@ -76,7 +76,7 @@ html, body {
     text-transform: uppercase;
     font-weight:700;
     color: #E91E63;
-    background-image:  url(profile.jpeg);
+    background-image: url(profile.jpeg);
     background-size: cover;
     background-position: center;
     
@@ -84,7 +84,16 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content:flex-end;
-   
+    animation: blurit 1s linear forwards;
+}
+
+@keyframes blurit {
+    0% {
+        filter: blur(10px)
+    }
+    100% {
+        filter: blur(0px)
+    }
 }
 
 .home-content {    
